@@ -1,0 +1,28 @@
+.btn-primary{
+   background-color: #ab7343;
+   border: #ab7343;
+   box-shadow: 1px ;
+}
+.primary{
+  color: #ab7343;
+}
+ .bg-p{
+  background-color: #ab7343;
+}
+.bg-p-s{
+  background-color: beige;
+}
+.btn-primary:hover{
+  background-color: beige;
+  color: #ab7343;
+}
+.activo{
+  color: #be8f66;
+}
+.activo:hover{
+  color: #be8f66;
+}
+.primary:hover{
+  color: #e4ba95;
+}
+  
