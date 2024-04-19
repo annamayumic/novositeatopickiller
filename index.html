@@ -3,112 +3,167 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>アトピー・キラーDEMO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <script type="module" src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
   </head>
   
   <body class="m-0 p-0">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand primary" href="#">アトピー・キラー</a>
+      <nav class="navbar navbar-expand-lg fixed-top py-2 p-lg-0 ">
+          <a class="nav-link brand fw-bolder px-4" href="index.html" style="font-size: 1.8rem;">アトピー・キラー</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse p-4 p-lg-0" id="navbarNav" style="font-size:0.9rem;">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link activo" aria-current="page" href="#">Home</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link txt-marrom" aria-current="page" href="index.html">HOME</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link primary" href="#">About</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link link-sec" href="about.html">ABOUT</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link primary" href="#">Products</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link link-sec" href="products.html">PRODUCTS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link primary" aria-disabled="true">Gallery</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link link-sec " href="gallery.html">GALLERY</a>
               </li>
             </ul>
           </div>
-          <a class="btn btn-primary rounded-5 d-none d-lg-block">Contact Us</a>
-        </div>
+          <a class="nav-link btn-marrom rounded-0 d-none d-lg-flex ms-3 my-0 py-3 align-items-center"  style="height: 4rem; font-size: 0.9rem;" href="#contact"><p class="mt-3">CONTACT US </p><box-icon name='right-arrow-alt' size="sm" color="beige"></box-icon></a>
       </nav>
     </header>
-    <section class="text-white" >
-      <div class="container-fluid" style="height: 80vh; background: linear-gradient( #ab7343, #fff 80%);">
-        <div class="h-100 container d-flex justify-content-center align-items-center text-center p-5">
-          <div class="d-flex-column">
-            <img src="colljapa.png" style="width: 30%;" class="py-3">
-            <h1 class="">Atopic Killer</h1>
-            <p class="">Solid interior and exterior material for healthy housing</p>
-           <button class="btn btn-primary col-5 rounded-5">Read More</button>
+  <main style="margin-top: 3rem;">
+    <section >
+      <div id="carouselExampleInterval" class="carousel slide mb-6" data-bs-ride="carousel" style="height: 80vh;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" aria-label="Slide 1"class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item  active" style="height: 80vh; background-image: url(https://live.staticflickr.com/65535/53167632074_34570a8c7f_b.jpg);background-repeat: no-repeat;  background-size: cover;  background-position: center center;">
+            <div class="container">
+              <div class="carousel-caption h-100 d-flex justify-content-center align-items-center text-center ">
+                  <div class="d-flex-column">
+                    <img src="colljapa.png" class="mb-2 coolJapan">
+                    <h4 class="fs-2">Atopic Killer</h4>
+                    <h1 class="display-md-3 display-4 fw-bold mb-1">アトピー・キラー</h1>
+                    <p class="fs-6 mb-0 pt-3 par">Solid interior and exterior material for healthy housing</p>
+                    <p class="fs-5 shadow-sm par">健康住宅専用無垢内外装材</p>
+                   <a href="about.html"><button class="btn btn-marrom rounded-0">Read More</button></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 80vh; background-image: url(https://live.staticflickr.com/65535/53167631909_a64d02c6c8_b.jpg);background-repeat: no-repeat;  background-size: cover;  background-position: center center;">        
+             <div class="container">
+              <div class="carousel-caption h-100 d-flex justify-content-center align-items-center text-center">
+                <div class="d-flex flex-column flex-wrap">
+                  <h1 class="display-md-3 display-4 fw-bold mb-1">For foreigners living in Japan</h1>
+                  <h5 class="fs-6 mb-0 pt-5">For those who are thinking of renovating and new construction<br>We recommend our original product「アトピー・キラー」Atopic Killer</h5>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 80vh; background-image: url(https://live.staticflickr.com/65535/53167426881_14dc961440_b.jpg);background-repeat: no-repeat;  background-size: cover;  background-position: center center;">        
+            <div class="container">
+              <div class="carousel-caption h-100 d-flex justify-content-center align-items-center text-center">
+                <h1 class="display-md-3 display-4 fw-bold mb-1">You are welcome to do a factory tour and check our production process</h1> 
+              </div>
+              
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
-    <section>
-      <div class="container-fluid p-0 my-4 bg-p-s">
-      <div class="container">
-        <div class="row">
+  <section>
+      <div class="container-fluid p-0 my-4 bg-gray">
+      <div class="container"style="max-width: 1200px;">
+        <div class="row d-flex flex-wrap-reverse" >
           <div class="col-lg-6 p-5">
-            <div ></div>
-            <h1>About Atopic Killer</h1>
+            <h1 class="fw-bold">About Atopic Killer</h1>
             <p>Atopic Killer is a 100% original product made from natural japanese cedar trees ranging 60 to 100 years old. It's a 99,99% natural building interior material.
               Used in Traditional Japanese buildings from ancient times, such as the Buddhist temples and Shrines of Nara, Kyoto and old private houses, The Cedar trees (杉 - Sugi) grown in Japan's climate are best suited as building materials in Japan.
               The spread of Atopic Killer has become a major mission to protect and nurture Japan's forests, provide health to the people, fix carbon dioxide in the atmosphere, and prevent global warming.</p>
-            <button class="btn btn-primary rounded-5">Read more</button>
+            <a href="about.html" class="btn btn-marrom rounded-0">Read more</a>
           </div>
-          <div class="col-lg-6">
-            <div class="position-relative h-100">
-              <video class="position-absolute img-fluid w-100 h-100" style="object-fit: cover;" alt="" autoplay="" muted="" loop="">
+          <div class="col-lg-6 col-12">
+              <video class="img-fluid w-100 h-100" style="object-fit: cover;" alt="" autoplay="" muted="" loop="">
               <source src="video rapido.mp4" type="video/mp4">
               </video>
-            </div>
+          </div>
+        </div>
+      </div>  
+      </div>
+    </section>
+    <section class="pt-5 mt-5">
+      <div class="container-fluid px-5" style="max-width: 1200px;">
+      <div class="container">
+        <div class="row flex-wrap-reverse">
+          <div class="col-lg-6 d-flex align-items-center" style="position: relative;">
+            <a class="ps-4" href="https://youtu.be/57JOuWGUeSg?si=WxQeeU5BFkiZ9ZoL"  target="_blank"><img class="rounded-4 border border-dark-subtle" width="100%" src="AtopicKiller(1).png" alt=""></a>
+          </div>
+          <div class="col-lg-6 pb-5 ps-5">
+            <h1 class="fw-bold">YouTube Channel</h1>
+            <p>Learn more about Atopic Killer products quickly and easily!</p>
+            <a href="https://www.youtube.com/@atopickiller"  target="_blank"><button class="btn btn-marrom rounded-0" >Redirect to Youtube</button></a>
           </div>
         </div>
       </div>  
       </div>
     </section>
     <section>
-      <div class="container py-4 my-5">
-        <h1 class="text-center fw-bolder my-2">Qualities</h1>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-5 px-sm-0 d-flex justify-content-center">
-          <div class="col">
-            <div class="card shadow-lg border-0">
-              <img src="https://live.staticflickr.com/65535/53167632074_34570a8c7f_b.jpg" class="card-img-top" alt="..."  width="100%" height="200px">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bold display-7">Mubushi</h5>
-                <h5 class="card-title text-center fw-bold display-7 py-2">Premium</h5>
-                <div class="d-flex justify-content-center">
-                  <a href="#" class="btn btn-primary rounded-5">Read More</a>
+      <div class="container mt-5 pt-5">
+        <h1 class="text-center fw-bolder my-2 py-3">Qualities</h1>
+        <div class="d-flex justify-content-center">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-around px-5">
+            <div class="col p-5 p-md-3 p-xl-4">
+              <div>
+                <div class="overflow-hidden" style="height: fit-content; width: fit-content">
+                  <img class="img" width="100%" src="https://live.staticflickr.com/65535/53167632074_34570a8c7f_b.jpg" alt="">
+                </div>
+                <div class="p-4 pb-3 border border-top-0 border-4 border-light text-center">
+                  <h5>Mubushi （無節）</h5>
+                  <h5 id="premium">Premium</h5>
+                  <a class="txt-marrom" href="products.html#mubushi"><p>Read More</p></a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-lg border-0">
-              <img src="https://live.staticflickr.com/65535/53167632074_34570a8c7f_b.jpg" class="card-img-top" alt="..."  width="100%" height="200px">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bold display-7">Mubushi</h5>
-                <h5 class="card-title text-center fw-bold display-7 py-2">Premium</h5>
-                <div class="d-flex justify-content-center">
-                  <a href="#" class="btn btn-primary rounded-5">Read More</a>
+            <div class="col p-5 p-md-3 p-xl-4">
+              <div>
+                <div class="overflow-hidden" style="height: fit-content; width: fit-content">
+                  <img class="img" width="100%" src="https://live.staticflickr.com/65535/53167631909_a64d02c6c8_b.jpg" alt="">
+                </div>
+                <div class="p-4 pb-3 border border-top-0 border-4 border-light text-center">
+                  <h5>Jyouko （上小）</h5>
+                  <h5 class="txt-marrom">Special</h5>
+                  <a class="txt-marrom" href="products.html#jyouko"><p>Read More</p></a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card  shadow-lg border-0">
-              <img src="https://live.staticflickr.com/65535/53167632074_34570a8c7f_b.jpg" class="card-img-top" alt="..."  width="100%" height="200px">
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bold display-7">Mubushi</h5>
-                <h5 class="card-title text-center fw-bold display-7 py-2">Premium</h5>
-                <div class="d-flex justify-content-center">
-                  <a href="#" class="btn btn-primary rounded-5">Read More</a>
+            <div class="col p-5 p-md-3 p-xl-4">
+              <div>
+                <div class="overflow-hidden" style="height: fit-content; width: fit-content">
+                  <img class="img" width="100%" src="https://live.staticflickr.com/65535/53167426881_14dc961440_b.jpg" alt="">
+                </div>
+                <div class="p-4 pb-3 border border-top-0 border-4 border-light text-center">
+                  <h5>Tokutou （特等）</h5>
+                  <h5>Regular</h5>
+                  <a class="txt-marrom" href="products.html#tokutou"><p>Read More</p></a>
                 </div>
               </div>
             </div>
@@ -116,20 +171,20 @@
         </div>
       </div>
     </section>
-    
-    <section>
-      <div class="container py-4 my-5">
-        <h1 class="text-center fw-bolder my-2">Shapes</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 py-5">
+    <section class="my-xl-5 py-xl-3">
+      <div class="container pt-4 mt-3">
+        <h1 class="text-center fw-bolder mt-2">Shapes</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
           <div class="col">
             <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#shape-img-1">
               <div class="card border-0">
-                <div class="card-body mb-2">
-                  <div class="d-flex justify-content-center mb-3 mb-md-5">
-                  <img src="https://live.staticflickr.com/65535/53167662859_f8d6019a00_b.jpg" alt="" class="img-fluid rounded-5 shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-center">
+                  <img src="https://live.staticflickr.com/65535/53167662859_f8d6019a00_b.jpg" alt="" class="img-fluid">
                   </div>
-                  <h5 class="card-title">Nearby Store</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">アトピー・キラー
+                    本実目透し加工品<br>Honzane Mesukashi</h5>
+                  <p class="card-text">Only Indoor Walls and Ceiling.</p>
                 </div>
               </div>
             </a>
@@ -138,11 +193,11 @@
             <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#shape-img-2">
               <div class="card border-0">
                 <div class="card-body">
-                  <div class="d-flex justify-content-center mb-3 mb-md-5">
-                  <img src="https://live.staticflickr.com/65535/53167662859_f8d6019a00_b.jpg" alt="" class="img-fluid rounded-5 shadow-lg">
+                  <div class="d-flex justify-content-center">
+                  <img src="https://live.staticflickr.com/65535/53166872742_9295da528e_b.jpg" alt="" class="img-fluid">
                   </div>
-                  <h5 class="card-title">Nearby Store</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">アトピー・キラー本実加工品<br>Honzane</h5>
+                  <p class="card-text">Only indoor Walls</p>
                 </div>
               </div>
             </a>
@@ -151,15 +206,18 @@
             <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#shape-img-3">
               <div class="card border-0">
                 <div class="card-body">
-                  <div class="d-flex justify-content-center mb-3 mb-md-5">
-                  <img src="https://live.staticflickr.com/65535/53167662859_f8d6019a00_b.jpg" alt="" class="img-fluid rounded-5 shadow-lg">
+                  <div class="d-flex justify-content-center">
+                  <img src="https://live.staticflickr.com/65535/53166872792_95447cf5ff_b.jpg" alt="" class="img-fluid">
                   </div>
-                  <h5 class="card-title">Nearby Store</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">アトピー・キラー本実9m/m長サネ加工品<br>Honzane 9m/m length</h5>
+                  <p class="card-text">For Outside Walls</p>
                 </div>
               </div>
             </a>
           </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="products.html#shapes" class="btn btn-marrom rounded-0 my-4">See more</a>
         </div>
       </div>
        <!-- Modal 1 -->
@@ -181,62 +239,64 @@
         </div>
       </div>
     </section>
-    <section>
-      
-      <div class="container px-4 py-2" id="icon-grid">
+    <section style="padding-top: 2rem;" class="mt-5 mt-sm-3 bg-gray">
+      <div class="container px-4 py-2 " id="icon-grid">
         <h1 class="pb-2 text-center fw-bolder">Why Choose </h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-          <div class="col d-flex align-items-start">
-            <div class="me-2">
-              <box-icon name='square-rounded' size="md"></box-icon>
+        <div class="d-flex justify-content-center">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3  g-4 py-5" style="max-width: 1200px;">
+            <div class="col d-flex align-items-start">
+              <div class="me-2">
+                <box-icon type='solid' name='paint' size="md"></box-icon>
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 ">Versatile in design</h3>
+                <p>Versatile in design that matches well with Western-style living and kitchens</p>
+              </div>
             </div>
-            
-            <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            <div class="col d-flex align-items-start">
+              <div class="me-2">
+                <box-icon name='droplet' size="md"></box-icon>
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4">Humidity control</h3>
+                <p>High humidity control and the aroma of wood (phytoncides).</p>
+              </div>
             </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="me-2">
-              <box-icon name='square-rounded' size="md"></box-icon>
+            <div class="col d-flex align-items-start">
+              <div class="me-2">
+                <box-icon name='thermometer' type='solid' size="md" ></box-icon>
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 ">Thermal conductivity</h3>
+                <p>Low thermal conductivity, doesn't feel cold.</p>
+              </div>
             </div>
-            <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            <div class="col d-flex align-items-start">
+              <div class="me-2">
+                <box-icon name='trending-up' size="md"></box-icon>
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 ">High insulation</h3>
+                <p></p>
+              </div>
             </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="me-2">
-              <box-icon name='square-rounded' size="md"></box-icon>
-            </div>
-            <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-              <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="me-2">
-              <box-icon name='square-rounded' size="md"></box-icon>
-            </div>
-            <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-              <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div class="me-2">
-              <box-icon name='square-rounded' size="md"></box-icon>
-            </div>
-            <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-              <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-          </div>         
+            <div class="col d-flex align-items-start">
+              <div class="me-2">
+                <box-icon name='collapse' size="md" ></box-icon>
+              </div>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 ">Impact absorption</h3>
+                <p>High impact absorption rate (moderate flexibility)</p>
+              </div>
+            </div>         
         </div>
+
+        </div>
+        
       </div>
     </section>
-    <section>
-      <div class="container my-2 my-lg-5 py-lg-5">
+    <section style="margin-top: 3rem;">
+      <div class="container py-lg-5">
         <div class="row px-4 pb-0 pe-lg-0 align-items-center rounded-3 border shadow-lg">
           <div class="col-lg-7 py-5">
             <h3 class="fw-bold lh-1">The Flooring Evolution of Atopic Killer</h3>
@@ -253,234 +313,283 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="container pt-2 py-lg-5">
-        <h1 class="text-center py-5 fw-bolder">Purchasing</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-4 py-2">
-          <div class="col">
-            <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <div class="card shadow border-0">
-                <div class="card-body">
-                  <h5 class="card-title">Nearby Store</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2">
-              <div class="card shadow border-0">
-                <div class="card-body">
-                  <h5 class="card-title">Factory's Store</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col">
-            <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa3">
-              <div class="card shadow border-0">
-                <div class="card-body">
-                  <h5 class="card-title">Payment Methods</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa4">
-              <div class="card shadow border-0">
-                <div class="card-body">
-                  <h5 class="card-title">Import</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col">
-            <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa5">
-              <div class="card shadow border-0">
-                <div class="card-body">
-                  <h5 class="card-title">Factory Tour</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-
-      <!-- Modal 1 -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal1</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <section style="margin-top: 3rem;">
+      <div class="container px-5" style="max-width: 1100px;">
+        <h1 class="text-center p-3 fw-bold">Purchasing Atopic Killer</h1>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h1>Nearby Store</h1>
+            <p>Regarding the purchase of "Atopy Killer," we will redirect you to make purchases at your local lumberyard, woodcraft store, or timber shop near your residence. We will also provide information about nearby Atopy Killer retailers. So If you could inform us about your region via email.<br>
+            <span>atopickillerjapan@gmail.com</span></p>
+            <br><a href="#contact" class="page-link txt-marrom">click here and contact us</a>
             </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  
-                </div>
-              </div>
+          <div class="col-md-6 d-none d-md-block">
+            <div class="postion-relative">
+                <img class="postion-absolute h-100 img-fluid" src="https://live.staticflickr.com/65535/53166886182_47426633ee_b.jpg" width="100%">
             </div>
           </div>
         </div>
       </div>
-      <!-- Modal 1 -->
-      <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 2</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 3 -->
-      <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 3</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 4 -->
-      <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 4</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 5 -->
-      <div class="modal fade" id="exampleModa5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 5</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container my-2">
-        <div class="p-5 text-center bg-body-tertiary rounded-3">
-          <h1 class="text-body-emphasis">After Installing</h1>
+      <div class="container mt-5">
+        <div class="p-4 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis">After Installation</h1>
           <p class="lead">
-            This is a simple Bootstrap jumbotron that sits within a <code>.container</code>, recreated with built-in utility classes.
+            We cannot accommodate complaints or replacements after the purchase is completed. If you have any uncertainties regarding defective items or scratches, please inquire with the purchasing source before leaving the store place.
           </p>
         </div>
       </div>
+      <div class="container mt-5 pt-3" style="max-width: 1100px;">
+        <h1 class="text-center fw-bold">Factory's Store</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+          <div class="col p-3">
+            <img src="https://live.staticflickr.com/65535/53167908315_6cb70a6cac_b.jpg" width="100%">
+            <h5 class="text-center fw-bold">Direct purchase</h5>
+            <p class="text-center px-sm-0 px-4" style="font-size: 1rem">We also offer factory-direct sales at the factory gate. For those considering new construction or remodeling, we will provide cost and delivery date estimates. We don't usually keep a large inventory at the factory.
+              In addition, in the case of orders from customers, we will provide an order contract. It's a good deal to pay for custom-made products. Once the amount is transferred to our company's bank account, we will begin the production of the ordered products as soon as confirmation is received. After the products are ready, we will promptly contact you for swift pickup. Please contact us by email!</p>
+          </div>
+          <div class="col p-3">
+            <img src="https://live.staticflickr.com/65535/53167675884_d96d11375b_b.jpg" width="100%">
+            <h5 class="text-center fw-bold">Delivery services</h5>
+            <p class="text-center px-sm-0 px-4" style="font-size: 1rem">We <span class="fw-bold">do not provide delivery services,</span> so you need to bring a truck or a shipping agent on your own. For customers who wish to purchase small quantities for purposes like DIY, <span class="fw-bold">we offer size cutting services</span> to those who visit us in a passenger car. Of course, this also applies to those who are interested in a factory tour.</p>
+          </div>
+          <div class="col p-3">
+            <img src="https://live.staticflickr.com/65535/53167675814_83f554bc4e_b.jpg" width="100%">
+            <h5 class="text-center fw-bold">Outlet Products</h5>
+            <p class="text-center px-sm-0 px-4" style="font-size: 1rem">The Outlet products, although rejected during the manufacturing inspection, but can still serve specific purposes. We encourage you to inspect it in person and make your purchase decision based on your specific needs. Please do not insist on further discounts; we are already offering it at a very affordable price.<span class="fw-bold">The custumer must to come to the factory.</span> It is available in limited quantities</p>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5" style="max-width: 1100px;">
+        <div class="row mt-5 d-flex align-items-center">
+          <div class="col-md-6 ">
+            <h2 class="fw-bold">Payment methods</h2>
+            <p>Please be aware that all transactions for factory pickups will be conducted in cash only. We do not accept transactions in forms other than cash. We kindly request your understanding and cooperation in this matter.</p>
+            </div>
+          <div class="col-md-6 d-none d-md-block">
+            <div class="postion-relative">
+                <img class="postion-absolute h-100 img-fluid" src="https://live.staticflickr.com/65535/53167908460_b3cac0826c_b.jpg" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5" style="max-width: 1100px;">
+        <div class="row  mt-5 d-flex align-items-center">
+          <div class="col-md-6 d-none d-md-block">
+            <div class="postion-relative">
+              <img class="postion-absolute h-100 img-fluid" src="https://live.staticflickr.com/65535/53181976870_0e202e1069_b.jpg" width="100%">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold">Import Atopic Killer</h2>
+            <p>For those who have taken a liking to Atopy Killer and wish to import it into their own country for home renovations or business purposes, we would like to introduce Hitachi Port Corporation (日立埠頭株式会社), located approximately 35 minutes away from us by car in Hitachi Port, Ibaraki-Ken. Inside Hitachi Port, there are facilities such as customs and warehouses, making it a well-equipped port facility. Atopy Killer has also been sent from Hitachi Port to South Korea and used in residential construction, demonstrating its effectiveness.</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
-      <div class="container g-5 py-5 my-5">
+      <div class="container g-5 py-5 my-5" style="max-width: 1200px;">
         <h1 class="text-center fw-bolder py-4">Gallery</h1>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3 d-flex justify-content-center px-5 px-md-0">
-          <div class="col">
-            <div class="card shadow-lg border-0">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="100%" max-height="225" max-width="400px" src="https://live.staticflickr.com/65535/53167904110_08ca204d59_b.jpg">
-              <div class="card-body">
-                <p class="card-text">original product</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-around px-5">
+          <div class="col px-2">
+            <div>
+              <div class="overflow-hidden" style="height: fit-content; width: fit-content">
+                <img class="img" width="100%" src="https://live.staticflickr.com/65535/53167904110_08ca204d59_b.jpg" alt="" data-bs-toggle="modal" data-bs-target="#img-1">
+              </div>
+              <div class="px-4 pb-3 border border-top-0 border-4 border-light">
+                <p class="txt-marrom ps-0 pb-0 p-3 mb-2">Atopic Killer</p>
+                <h5>original product</h5>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card  shadow-lg border-0">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="100%" max-height="225" max-width="400px" src="https://live.staticflickr.com/65535/53167904110_08ca204d59_b.jpg">
-              <div class="card-body">
-                <p class="card-text">original product</p>
+          <div class="modal fade" id="img-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+               <div class="modal-body">
+                 <img width="100%" src="https://live.staticflickr.com/65535/53167904110_08ca204d59_b.jpg">
+               </div>
+              </div>
+              <button type="button" class="btn-close position-absolute end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="col px-2">
+            <div>
+              <div class="overflow-hidden" style="height: fit-content; width: fit-content">
+                <img class="img" width="100%" src="https://live.staticflickr.com/65535/53167951698_a7beed6c4d_b.jpg" alt="" data-bs-toggle="modal" data-bs-target="#img-2">
+              </div>
+              <div class="px-4 pb-3 border border-top-0 border-4 border-light">
+                <p class="txt-marrom ps-0 pb-0 p-3 mb-2">Finished Project</p>
+                <h5>Bathroom</h5>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card  shadow-lg border-0">
-              <img class="bd-placeholder-img card-img-top"  width="100%" height="100%" max-height="225" max-width="400px" src="https://live.staticflickr.com/65535/53167904110_08ca204d59_b.jpg">
-              <div class="card-body">
-                <p class="card-text">original product</p>
+          <div class="modal fade" id="img-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+               <div class="modal-body">
+                 <img width="100%" src="https://live.staticflickr.com/65535/53167951698_a7beed6c4d_b.jpg">
+               </div>
+              </div>
+              <button type="button" class="btn-close position-absolute end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="col px-2">
+            <div>
+              <div class="overflow-hidden" style="height: fit-content; width: fit-content">
+                <img class="img" width="100%" src="https://live.staticflickr.com/65535/53167671504_d453a8dbaa_b.jpg" alt="" data-bs-toggle="modal" data-bs-target="#img-3" >
+              </div>
+              <div class="px-4 pb-3 border border-top-0 border-4 border-light">
+                <p class="txt-marrom ps-0 pb-0 p-3 mb-2">Wood Collecting Center</p>
+                <h5>Cedar Tree</h5>
               </div>
             </div>
           </div>
+          <div class="modal fade" id="img-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+               <div class="modal-body">
+                 <img width="100%" src="https://live.staticflickr.com/65535/53167671504_d453a8dbaa_b.jpg">
+               </div>
+              </div>
+              <button type="button" class="btn-close position-absolute end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="gallery.html" class="btn btn-marrom rounded-0 my-4">Full Gallery</a>
         </div>
       </div>
     </section>
-    <section class="bg-p-s p-0 m-0">
-      <div class="container col-xl-10 col-xxl-8 px-4 py-2">
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
-            <h1 class="display-6 fw-bold lh-1 mb-3">Contact Us</h1>
-            <div class="shadow-lg p-2 d-flex justify-content-center justify-content-md-start">
-              <box-icon class="me-3" name='envelope' ></box-icon><p>atopickillerjapan@gmail.com</p>
+    <section class="py-5 bg-gray">
+      <div class="container-fluid px-5" style="max-width: 1200px;">
+      <div class="container">
+        <div class="row flex-wrap">
+          <div class="col-lg-6 pb-5 ps-5">
+            <h1>Do a Factory tour</h1>
+            <p>We are opened to recieve you to know our factory and check the production process. We are currently accepting<strong> reservations via email.</strong> During the factory tour, we also offer direct sales of "Atopy Killer" products.</p>
+            <div class="d-flex mt-4">
+              <div class="bg-white d-flex justify-content-center align-items-center" style="height: 4rem; width: 4rem;">
+                <box-icon color="#ab7442" width="100%"  size="md" name='envelope' ></box-icon>
+              </div>
+              <div class="ms-4 ">
+                <p>Send a E-mail to Book your visit<br><strong>atopickillerjapan@gmail.com</strong></p>
+              </div>
             </div>
           </div>
-          <div class="col-md-10 mx-auto col-lg-5">
-            <!--colocar google maps aqui-->
+          <div class="col-lg-6 d-flex align-items-center" >
+            <img class="" width="100%" src="https://live.staticflickr.com/65535/53167990778_0dacde2919_b.jpg" alt="">
           </div>
         </div>
+      </div>  
       </div>
     </section>
-      <footer class="pt-2 bg-p text-white">
-        <div class="row d-flex">
-          <div class="col-8 col-md-6 p-3">
-            <ul class="nav flex-column px-4">
-              <li class="mb-2 d-flex"><box-icon class="me-3" name='current-location' color="white"></box-icon><p>茨城県常陸太田市折橋町６０５ 〒311-0506</p></li>
-              <li class="mb-2"><p>Mon - Fri : 09.00 AM - 17.00 PM</p></li>
-              <li class="mb-2 d-flex"><box-icon class="me-3" name='envelope' color="white"></box-icon><p>atopickillerjapan@gmail.com</p></li>
-            </ul>
+    <section>
+      <div class="container-fluid py-5 mt-4 ">
+      <div class="container"style="max-width: 1200px;">
+        <div class="row d-flex flex-wrap-reverse" >
+          <div class="col-lg-6 p-5">
+            <h1>Our Office</h1>
+            <p>"Atopic Killer" is a product manufactured and sold by SAGAWA SANGYOU CO. LTD (株)佐川産業<br><br>
+              Our office is next to the factory.  We are looking forward to welcoming you with open arms.There are hot springs around our company as well.  There are also many delicious gourmet restaurants such as the Italian restaurant "Raul" (楽生流), that makes use of Atopic Killer internally is quite fashionable. The taste is excellent, and it's a recommended place where you can enjoy a delightful meal in a relaxing atmosphere. You can also visit famous attractions like the Ryujin Big Suspension Bridge and experience bungee jumping. Fukuroda Waterfall is also in the vicinity.
+              <br><br>Various products, including Atopi Killer, are registered trademarks protected by the Japanese government's Patent Office. Unauthorized use is strictly prohibited by law."</p>
           </div>
-          <div class="col ms-auto d-none d-md-block">
-            <ul class="nav flex-column">
-              <li class="mb-2 d-flex"><box-icon class="me-3" type='logo' name='youtube' size="sm" color="white"></box-icon><p>youtube</p></li>
-              <li class="d-flex"><box-icon name='instagram' type='logo'size="sm" class="me-3" color="white"></box-icon><p>instagram</p></li>
-            </ul>
+          <div class="col-lg-6 col-12">
+            <img class="img-fluid w-100 h-100" style="object-fit: cover;"  alt="" src="https://live.staticflickr.com/65535/53167710734_53ccb7b9b0_b.jpg">
           </div>
         </div>
-    
-        <div class="d-flex flex-column flex-sm-row justify-content-between px-5 m-0 border-top">
-          <p>© 2024 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><box-icon type='logo' name='youtube' size="sm" color="white"></box-icon></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><box-icon name='instagram' type='logo' size="sm" color="white"></box-icon></box-icon></a></li>
+      </div>  
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid bg-gray overflow-hidden px-lg-0" style="margin: 6rem 0;" id="contact">
+          <div class="container px-lg-0 d-flex justify-content-center">
+              <div class="row g-0 mx-lg-0" style="max-width: 1200px;">
+                  <div class="col-lg-6 py-5 ">
+                      <div class="p-lg-5 ps-lg-0">
+                          <div class="text-start">
+                              <h1 class="mb-4 fw-bold">Contact Us</h1>
+                          </div>
+                          <div class="d-flex">
+                            <box-icon class="me-3" name='envelope'></box-icon>
+                            <p class="">atopickillerjapan@gmail.com</p>
+                          </div>
+                          <p class="mb-4">Contact languages: Japanese, English and Portuguese</p>
+                          <p class="mb-4">For more informations, booking a tour and others.</p>
+                          <form  action="https://formsubmit.co/atopickillerjapan@gmail.com" method="POST">
+                              <div class="row g-3">
+                                  <div class="col-md-6">
+                                      <div class="form-floating">
+                                          <input type="text" name="name" class="form-control" id="name" placeholder="Full Name" required>
+                                          <label for="name">Your Name</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-floating">
+                                          <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                                          <label for="email">Your Email</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-floating">
+                                          <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                          <label for="subject">Subject</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-floating">
+                                          <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea required>
+                                          <label for="message">Message</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <button class="btn btn-marrom rounded-0 w-100 py-3" type="submit">Send Message</button>
+                                  </div>
+                                  <input type="hidden" name="_next" value="https://atopickiller.co.jp/thanks.html">
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                      <div class="position-relative h-100">
+                          <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16078.074718526552!2d140.49272514388707!3d36.72300247161735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60219767937fefd5%3A0x899386f8578c6f6d!2sAtopic%20Killer!5e0!3m2!1spt-BR!2sjp!4v1694393297545!5m2!1spt-BR!2sjp"
+                          frameborder="0" allowfullscreen="" aria-hidden="false"
+                          tabindex="0"></iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <footer class="pt-4 mt-5 text-white bg-dark ">
+      <div class="container d-flex justify-content-center">
+         <div class="row d-flex container">
+        <div class="col-12 col-md-8 pt-3">
+          <ul class="nav flex-column px-4">
+            <li class="mb-2"><h5>Adress</h5></li>
+            <li class="mb-2 d-flex"><svg class="me-3 w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
+            </svg>
+            <p>茨城県常陸太田市折橋町６０５ 〒311-0506</p></li>
+            <li class="mb-2"><p>Mon - Fri : 09.00 AM - 17.00 PM</p></li>
+            <li class="mb-2 d-flex"><box-icon class="me-3" color="white"  name='envelope' ></box-icon><p>atopickillerjapan@gmail.com</p></li>
           </ul>
         </div>
+        <div class="pt-3  col-4 col-md-4 col-12">
+          <ul class="nav flex-column px-4">
+            <li class="mb-2"><h5>Social Media</h5></li>
+            <li class="mb-2 d-flex"><a href="https://www.youtube.com/@atopickiller"  target="_blank"><box-icon color="white"  class="me-3" type='logo' name='youtube' size="sm" ></box-icon></a><a class="page-link" href="https://www.youtube.com/@atopickiller"  target="_blank"><p>youtube</p></a></li>
+            <li class="d-flex"><a href="https://www.instagram.com/atopic.killer/"  target="_blank"><box-icon name='instagram' color="white"  type='logo'size="sm" class="me-3" ></box-icon></a><a href="https://www.instagram.com/atopic.killer/"  target="_blank" class="page-link"><p>instagram</p></a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+     
+      <hr>
+      <div class="text-center p-2 m-0">
+        <p>© 2024 AtopicKiller, Inc. All rights reserved.</p>
+      </div>
     </footer>
+  </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

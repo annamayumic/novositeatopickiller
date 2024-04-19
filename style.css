@@ -1,28 +1,80 @@
-.btn-primary{
-   background-color: #ab7343;
-   border: #ab7343;
-   box-shadow: 1px ;
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-.primary{
-  color: #ab7343;
+header>nav{
+  background-color: white;
+  position: fixed;
+  top: 0;
 }
- .bg-p{
-  background-color: #ab7343;
+body{
+  width: 100%;
 }
-.bg-p-s{
-  background-color: beige;
+.coolJapan{
+  width: 30%;
 }
-.btn-primary:hover{
-  background-color: beige;
-  color: #ab7343;
+@media(max-width: 1300px){
+  .coolJapan{
+    width: 40%;
+  }
 }
-.activo{
-  color: #be8f66;
+@media(max-width: 1000px){
+  .coolJapan{
+    width: 60%;
+  }
 }
-.activo:hover{
-  color: #be8f66;
+@media(max-width: 550px){
+  .coolJapan{
+    width: 100%;
+  }
 }
-.primary:hover{
-  color: #e4ba95;
+
+.max-wi{
+  max-width: 1100px;
 }
-  
+.fs-3rem{
+  font-size: 3rem;
+}
+.img{
+  transition: 0.5s;
+}
+.img:hover{
+  scale: 1.1;
+}
+
+.txt-marrom{
+  color: #ab7442;
+}
+.btn-marrom{
+  background-color: #ab7442;
+  color: beige;
+  padding: 10px;
+  border-radius: 30px;
+}
+.btn-marrom:hover{
+  background-color: #e1ab79;
+  color: beige;
+}
+.link-sec{
+  color: rgb(47, 47, 47);
+}
+.link-sec:hover{
+  color: #ab7442
+}
+.brand{
+  color: #ab7442
+}
+.brand:hover{
+  color:  #c39e7d
+}
+.bg-marrom{
+  background-color: #ab7442;
+}
+.bg-gray{
+  background-color: rgba(145, 144, 144, 0.062);
+}
+#premium{
+  color: goldenrod;
+}
+

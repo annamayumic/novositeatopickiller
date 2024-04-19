@@ -1,0 +1,21 @@
+<!--
+  <div class="col pb-5 px-5 p-sm-3 pb-sm-5">
+            <div class="overflow-hidden" style="height: fit-content; width: fit-content">
+              <img width="100%" src="https://live.staticflickr.com/65535/53167985139_c485181821_b.jpg" alt="" data-bs-toggle="modal" data-bs-target="#imgcollectcenter">
+            </div>
+            <p class="text-primary ps-0 pb-0 p-3 mb-2" name="categoria">Process</p>
+            <h5 class="mt-0" name="titulo">Collecting Center</h5>
+           
+            <div class="modal fade" id="imgcollectcenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img width="100%" src="https://live.staticflickr.com/65535/53167985139_c485181821_b.jpg">
+                  </div>
+                </div>
+                <button type="button" class="btn-close position-absolute end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            
+          </div>
+-->
